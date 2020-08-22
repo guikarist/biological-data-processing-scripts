@@ -15,7 +15,7 @@ files=(./*.mrc)
 
 file_1=${files[0]}
 
-IFS=$seq read -ra names <<<"$file_1"
+IFS=$sep read -ra names <<<"$file_1"
 min="${names[$deg_pos]}"
 max="${names[$deg_pos]}"
 
